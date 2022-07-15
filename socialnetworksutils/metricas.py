@@ -63,10 +63,6 @@ def graficar_distribuciones(distribucion_grados):
 
     # Para obtener el valor de alfa vistualmente
     x_m = 4
-    alpha_prima = 1.7
-    exponencial = list(map(lambda k: 5 * k ** (-alpha_prima), rango[x_m:]))
-    plt.plot(rango[x_m:], exponencial)
-    print("Alfa: ", alpha_prima + 1)
 
     plt.xlabel("Grado k")
     plt.ylabel("Nk (Pk * N)")
